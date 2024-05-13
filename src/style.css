@@ -2,16 +2,13 @@
     border: 0;
     margin: 0;
     padding: 0;
+    --main-color: #ec0053;
 }
 
 body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: beige;
-    background-image: url(pizza-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 a {
@@ -19,27 +16,119 @@ a {
     text-decoration: none;
 }
 
+.bg-image {
+    position: fixed;
+    left: -5%;
+    right: 0;
+    top: -5%;
+    z-index: -1;
+    display: block;
+    background-image: url(pizza-bg-low.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 110%;
+    height: 110%;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
 header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px 20%;
-    background-color: rgba(103, 243, 147, 0.2);
+    padding: 20px 20%;
+    background-color: transparent;
+    border-bottom: 3px solid var(--main-color);
+    text-align: center;
+    box-sizing: border-box;
 }
 
-.test {
-    height: 100px;
-    width: 100px;
-    background-color: blue;
+header > h1 {
+    color: white;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid var(--main-color);
+}
+
+.nav-link {
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid var(--main-color);
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+#welcome {
+    color: var(--main-color);
+    font-size: 70px;
+    font-weight: 700;    
+}
+
+.title {
+    margin-top: -40px;
+    font-size: 80px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+}
+
+#line {
+    width: 280px;
+    border: 2px solid var(--main-color);
+    margin: 30px 0;
+}
+
+.slogan {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#menu-btn {
+    background-color: var(--main-color);
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: auto;
     padding: 20px 0px;
     gap: 5px;
-    background-color: rgba(103, 243, 147, 0.2);
+    background-color: transparent;
+    border-top: 3px solid var(--main-color);
+    color: white;
+    font-size: 18px;
 }
