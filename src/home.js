@@ -20,12 +20,10 @@ const home = () => {
     slogan.textContent = "Fatto con passione!";
     contentDiv.appendChild(slogan);
 
-    const menuLink = document.createElement("a");
     const menuBtn = document.createElement("btn");
     menuBtn.id = "menu-btn";
     menuBtn.textContent = "View Menu";
-    menuLink.appendChild(menuBtn);
-    contentDiv.appendChild(menuLink);
+    contentDiv.appendChild(menuBtn);
 }
 
 export default home;
