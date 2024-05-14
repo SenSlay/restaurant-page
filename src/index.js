@@ -1,3 +1,4 @@
-import './style.css';
+import "./style.css";
+import renderHome from "./home.js";
 
-console.log("test");
+renderHome();

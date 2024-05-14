@@ -119,6 +119,7 @@ nav {
     font-size: 15px;
     text-transform: uppercase;
     cursor: pointer;
+    display: block;
 }
 
 footer {
