@@ -63,7 +63,7 @@ nav {
     border-bottom: 2px solid var(--main-color);
 }
 
-.nav-link {
+.nav-btn {
     padding: 10px;
     background-color: transparent;
     color: white;

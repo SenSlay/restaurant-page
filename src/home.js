@@ -22,6 +22,7 @@ const home = () => {
 
     const menuBtn = document.createElement("btn");
     menuBtn.id = "menu-btn";
+    menuBtn.classList.add("page-btn");
     menuBtn.textContent = "View Menu";
     contentDiv.appendChild(menuBtn);
 }
