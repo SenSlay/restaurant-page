@@ -14,6 +14,7 @@ document.addEventListener("click", (e) => {
 
     if (target.classList.contains("page-btn")) {
         contentDiv.innerHTML = "";
+        contentDiv.className = "";
 
         if (target.id === "home") renderHome();
         if (target.id === "menu" || target.id === "menu-btn") renderMenu();

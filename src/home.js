@@ -12,7 +12,7 @@ const home = () => {
     contentDiv.appendChild(title);
 
     const line = document.createElement("div");
-    line.id = "line";
+    line.classList.add("line");
     contentDiv.appendChild(line);
 
     const slogan = document.createElement("p");
