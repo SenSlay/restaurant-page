@@ -1,6 +1,6 @@
 const menu = () => {
     const contentDiv = document.getElementById("content");
-    contentDiv.classList.add("menu-content");
+    contentDiv.classList.add("white-bg");
     
     const menuTitle = document.createElement("h1");
     menuTitle.classList.add("menu-title");
