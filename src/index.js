@@ -3,10 +3,12 @@ import renderHome from "./home.js";
 import renderMenu from "./menu.js";
 import renderAbout from "./about.js"
 
-// Initial page render
-renderHome();
-
 const contentDiv = document.getElementById("content");
+
+// Initial page render
+contentDiv.innerHTML = "";
+contentDiv.className = "";
+renderHome();
 
 // Tab-switching
 document.addEventListener("click", (e) => {

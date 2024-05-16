@@ -164,6 +164,14 @@ nav {
     color: var(--main-color);
 }
 
+/* about page */
+
+.about-paragraph {
+    width: 70%;
+    text-align: center;
+    font-size: 22px;
+}
+
 /* footer */
 
 footer {
