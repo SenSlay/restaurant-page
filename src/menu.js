@@ -24,6 +24,7 @@ const menu = () => {
 
         const itemTitle = document.createElement("h2");
         itemTitle.textContent = title;
+        itemTitle.classList.add("item-title");
         menuItem.appendChild(itemTitle);
         
         const itemDescription = document.createElement("p");

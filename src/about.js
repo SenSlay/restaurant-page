@@ -1,7 +1,8 @@
 const about = () => {
     const contentDiv = document.getElementById("content");
+    contentDiv.classList.add("white-bg");
+
     
-    console.log("about test");
 }
 
 export default about;
