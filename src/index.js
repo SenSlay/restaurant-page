@@ -18,8 +18,28 @@ document.addEventListener("click", (e) => {
         contentDiv.innerHTML = "";
         contentDiv.className = "";
 
-        if (target.id === "home") renderHome();
-        if (target.id === "menu" || target.id === "menu-btn") renderMenu();
-        if (target.id === "about") renderAbout();
+        // Remove active class on all nav btns
+        const navBtns = document.querySelectorAll(".nav-btn");
+        navBtns.forEach(btn => {
+            btn.classList.remove("active");
+        });
+
+        if (target.id === "home") {
+            renderHome();
+            const homeNavBtn = document.getElementById("home");
+            homeNavBtn.classList.add("active");
+        }
+
+        if (target.id === "menu" || target.id === "menu-btn") {
+            renderMenu();
+            const menuNavBtn = document.getElementById("menu");
+            menuNavBtn.classList.add("active");
+        }
+
+        if (target.id === "about") {
+            renderAbout();
+            const aboutNavBtn = document.getElementById("about");
+            aboutNavBtn.classList.add("active");
+        } 
     }
   });
